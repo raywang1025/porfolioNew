@@ -1,0 +1,19 @@
+{
+  "name": "porfolionew",
+  "version": "1.0.0",
+  "description": "Ray's 2021 portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ray Wang",
+  "license": "ISC",
+  "dependencies": {
+    "@webpack-cli/init": "^1.1.1",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.12.2",
+    "webpack-cli": "^4.3.1"
+  }
+}
