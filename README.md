@@ -8,6 +8,6 @@
     - [ ] ＊ postcss-loader
     - [ ] ＊ babel-loader
   ＊ plugins
-    - [ ] ＊MiniCssExtractPlugin
+    - [ ] ＊ MiniCssExtractPlugin
 - [ ] ＊ sass
 - [ ] ＊ axios
