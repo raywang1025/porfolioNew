@@ -1,0 +1,23 @@
+$desktop_media: 960px
+$tablet_media: 760px
+$phone_media: 480px
+
+.work_container
+  // width: 1680px
+  max-width: 100%
+  display: grid
+  grid-template-columns: 25% 25% 25% 25%
+  // grid-template-rows: 50%
+
+  .work_info_bg img
+    width: 100%
+    height: auto
+
+@media (max-width: $tablet_media)
+  .work_container
+    display: block
+
+    .work_info_bg img
+      width: 50%
+
+

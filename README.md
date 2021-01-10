@@ -11,3 +11,4 @@
     - [ ] MiniCssExtractPlugin
 - [ ] sass
 - [ ] axios
+- [ ] CSS Grid

@@ -1,3 +1,21 @@
 .text-primary {
   color: #2525b1;
 }
+.work_container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.work_container .work_info_bg img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 760px) {
+  .work_container {
+    display: block;
+  }
+  .work_container .work_info_bg img {
+    width: 50%;
+  }
+}

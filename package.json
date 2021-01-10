@@ -5,13 +5,15 @@
     "main": "index.html",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "webpack --config webpack.config.js"
+        "build": "webpack --config webpack.config.js",
+        "start": "open index.html"
     },
     "author": "Ray Wang",
     "license": "ISC",
     "dependencies": {
         "@webpack-cli/init": "^1.1.1",
-        "axios": "^0.21.1"
+        "axios": "^0.21.1",
+        "jquery": "^3.5.1"
     },
     "devDependencies": {
         "@babel/core": "^7.12.10",

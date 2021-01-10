@@ -81,7 +81,13 @@ module.exports = {
     // "css-loader",
     // // Compiles Sass to CSS
     // "sass-loader",
-    plugins: [new MiniCssExtractPlugin({
-        filename: './bundle.css',
-    }, )],
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: './bundle.css',
+        })
+        // new webpack.ProvidePlugin({
+        //     $: 'jquery',
+        //     jQuery: 'jquery'
+        // })
+    ]
 };

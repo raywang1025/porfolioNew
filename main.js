@@ -1,8 +1,13 @@
  var axiosPages = require('./axiosPages');
  var coverEff = require('./coverEff');
+ var hambergerMenu = require('./hambergerMenu');
+ var $ = require("jquery");
+ import 'jquery';
  axiosPages();
  coverEff();
+ hambergerMenu();
  import './all.sass'; // use ESM method import
+ import './works.sass';
  //  const SASS_STYLE = require('./all.sass')
 
  function putText() {
