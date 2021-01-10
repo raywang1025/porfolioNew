@@ -1,6 +1,7 @@
 // Webpack uses this to work with directories
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 // main configuration object.
 // different options and tell Webpack what to do
 module.exports = {
@@ -23,15 +24,15 @@ module.exports = {
     mode: 'development',
     module: {
         rules: [
-            // 配置 babel-loader (第一步)
+            // set babel-loader (step1)
             {
                 test: /\.m?js$/,
-                // 排除 node_modules 與 bower_components 底下資料 (第二步)
+                // exclude data in node_modules and bower_components  (step2)
                 exclude: /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        // 配置 Babel 解析器 (第三步)
+                        // set Babel analyzer (step3)
                         presets: ['@babel/preset-env'],
                     },
                 },
@@ -45,6 +46,7 @@ module.exports = {
 
             // Apply rule for .sass, .scss or .css files
             test: /\.(sa|sc|c)ss$/,
+
             // Set loaders to transform files.
             // Loaders are applying from right to left(!)
             // The first loader will be applied after others
@@ -69,16 +71,16 @@ module.exports = {
                         //     implementation: require("sass")
                         // }
                 }
-                // MiniCssExtractPlugin.loader,
-                // // Creates `style` nodes from JS strings
-                // "style-loader",
-                // // Translates CSS into CommonJS
-                // "css-loader",
-                // // Compiles Sass to CSS
-                // "sass-loader",
             ],
         }, ],
     },
+    // MiniCssExtractPlugin.loader,
+    // // Creates `style` nodes from JS strings
+    // "style-loader",
+    // // Translates CSS into CommonJS
+    // "css-loader",
+    // // Compiles Sass to CSS
+    // "sass-loader",
     plugins: [new MiniCssExtractPlugin({
         filename: './bundle.css',
     }, )],
