@@ -136,7 +136,7 @@ table {
 
 /* ================================================== */
 
-.section2 {
+.section_cover {
     display: grid;
     /* grid-template-columns: 15% auto 15%; */
     /* grid-template-rows: 25% auto% 25%; */
@@ -144,17 +144,23 @@ table {
     height: 100vh;
     color: #fff;
     background-color: #000;
-    /* overflow: hidden; */
+    transition: /* overflow: hidden; */
 }
 
 @media only screen and (max-width: 600px) {
-    .section2 {
+    .section_cover {
         width: 100%;
     }
 }
 
-.section2 .coverWords {
+.section_cover {
     /* font-size: 5vw; */
     margin: 0 auto;
     cursor: grab;
+    transition: 1s;
+}
+
+.clapStart {
+    color: #fff;
+    transition: 1s;
 }
