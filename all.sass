@@ -12,3 +12,46 @@ $primary: #2525b1
 
 .text-primary 
   color: $primary
+
+.moveLeft 
+  width: 100px
+  height: 100px
+  background-color: red
+  animation-name: clapStart
+  animation-duration: 4s
+
+
+@mixin keyframes($animationName) 
+    @-webkit-keyframes #{$animationName} 
+        @content
+    @-moz-keyframes #{$animationName} 
+        @content
+    @-o-keyframes #{$animationName} 
+        @content
+    @keyframes #{$animationName} 
+        @content
+
+@include keyframes(move) 
+    0%   
+      background-color: red
+    20% 
+      background-color: green
+    40%
+      background-color: blue
+    60%
+      background-color: pink
+    80%
+      background-color: brown
+    100%
+      background-color: peach
+
+.clapStartMove
+  animation: move 6s infinite alternate ease-in-out
+
+.animateOnce 
+    animation: move 6s normal forwards ease-in-out
+
+// -moz-animation: move 7s linear
+// -webkit-animation: move 7s linear
+// -o-animation: move 7s linear
+

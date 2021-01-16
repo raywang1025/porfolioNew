@@ -1,5 +1,6 @@
  var axiosPages = require('./axiosPages');
  var coverEff = require('./coverEff');
+ //  var moveLeft = require('./moveLeft');
  var hambergerMenu = require('./hambergerMenu');
  var $ = require("jquery");
  import 'jquery';
@@ -14,8 +15,6 @@
      console.log("okq")
          // name.innerHTML = "hello world";
  }
-
-
  // // get users
  // const getUsers = () => {
  //     axios.get('https://reqres.in/api/users')
@@ -26,9 +25,6 @@
  //         .catch(error => console.error(error));
  // };
  // getUsers();
-
-
-
 
  function displayData() {
      name.appendChild(response);
