@@ -6,7 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "webpack --config webpack.config.js",
-        "start": "open index.html"
+        "start": "open index.html",
+        "push": "sh gitPushAll.sh"
     },
     "author": "Ray Wang",
     "license": "ISC",
